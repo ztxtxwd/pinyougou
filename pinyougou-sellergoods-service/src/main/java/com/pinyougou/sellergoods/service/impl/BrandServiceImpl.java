@@ -14,6 +14,7 @@ import java.util.List;
 
 
 
+
 import javax.naming.ldap.PagedResultsControl;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,9 +27,10 @@ import com.pinyougou.mapper.TbBrandMapper;
 import com.pinyougou.pojo.TbBrand;
 import com.pinyougou.pojo.TbBrandExample;
 import com.pinyougou.pojo.TbBrandExample.Criteria;
-import com.pinyougou.pojo.entity.PageResult;
-import com.pinyougou.pojo.entity.Result;
 import com.pinyougou.sellergoods.service.BrandService;
+
+import entity.PageResult;
+import entity.Result;
 
 @Service
 public class BrandServiceImpl implements BrandService{

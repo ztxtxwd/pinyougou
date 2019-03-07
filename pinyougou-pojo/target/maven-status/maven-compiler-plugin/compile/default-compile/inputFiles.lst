@@ -23,7 +23,6 @@ C:\Users\ztx42\workspace\pinyougou-parent\pinyougou-pojo\src\main\java\com\pinyo
 C:\Users\ztx42\workspace\pinyougou-parent\pinyougou-pojo\src\main\java\com\pinyougou\pojo\TbBrandExample.java
 C:\Users\ztx42\workspace\pinyougou-parent\pinyougou-pojo\src\main\java\com\pinyougou\pojo\TbSellerExample.java
 C:\Users\ztx42\workspace\pinyougou-parent\pinyougou-pojo\src\main\java\com\pinyougou\pojo\TbItemCatExample.java
-C:\Users\ztx42\workspace\pinyougou-parent\pinyougou-pojo\src\main\java\com\pinyougou\pojo\entity\Result.java
 C:\Users\ztx42\workspace\pinyougou-parent\pinyougou-pojo\src\main\java\com\pinyougou\pojo\TbItem.java
 C:\Users\ztx42\workspace\pinyougou-parent\pinyougou-pojo\src\main\java\com\pinyougou\pojo\TbGoods.java
 C:\Users\ztx42\workspace\pinyougou-parent\pinyougou-pojo\src\main\java\com\pinyougou\pojo\TbGoodsDesc.java
@@ -35,12 +34,13 @@ C:\Users\ztx42\workspace\pinyougou-parent\pinyougou-pojo\src\main\java\com\pinyo
 C:\Users\ztx42\workspace\pinyougou-parent\pinyougou-pojo\src\main\java\com\pinyougou\pojo\TbGoodsDescExample.java
 C:\Users\ztx42\workspace\pinyougou-parent\pinyougou-pojo\src\main\java\com\pinyougou\pojo\TbSeckillGoods.java
 C:\Users\ztx42\workspace\pinyougou-parent\pinyougou-pojo\src\main\java\com\pinyougou\pojo\TbOrderItemExample.java
+C:\Users\ztx42\workspace\pinyougou-parent\pinyougou-pojo\src\main\java\entity\Result.java
 C:\Users\ztx42\workspace\pinyougou-parent\pinyougou-pojo\src\main\java\com\pinyougou\pojo\TbBrand.java
 C:\Users\ztx42\workspace\pinyougou-parent\pinyougou-pojo\src\main\java\com\pinyougou\pojo\TbSeckillOrderExample.java
-C:\Users\ztx42\workspace\pinyougou-parent\pinyougou-pojo\src\main\java\com\pinyougou\pojo\entity\PageResult.java
 C:\Users\ztx42\workspace\pinyougou-parent\pinyougou-pojo\src\main\java\com\pinyougou\pojo\TbContentCategory.java
 C:\Users\ztx42\workspace\pinyougou-parent\pinyougou-pojo\src\main\java\com\pinyougou\pojo\TbSpecificationExample.java
 C:\Users\ztx42\workspace\pinyougou-parent\pinyougou-pojo\src\main\java\com\pinyougou\pojo\TbTypeTemplateExample.java
 C:\Users\ztx42\workspace\pinyougou-parent\pinyougou-pojo\src\main\java\com\pinyougou\pojo\TbOrder.java
 C:\Users\ztx42\workspace\pinyougou-parent\pinyougou-pojo\src\main\java\com\pinyougou\pojo\TbOrderItem.java
+C:\Users\ztx42\workspace\pinyougou-parent\pinyougou-pojo\src\main\java\entity\PageResult.java
 C:\Users\ztx42\workspace\pinyougou-parent\pinyougou-pojo\src\main\java\com\pinyougou\pojo\TbContent.java

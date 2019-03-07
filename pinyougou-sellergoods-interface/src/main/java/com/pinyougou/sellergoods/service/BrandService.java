@@ -3,8 +3,9 @@ package com.pinyougou.sellergoods.service;
 import java.util.List;
 
 import com.pinyougou.pojo.TbBrand;
-import com.pinyougou.pojo.entity.PageResult;
-import com.pinyougou.pojo.entity.Result;
+
+import entity.PageResult;
+import entity.Result;
 
 
 public interface BrandService {

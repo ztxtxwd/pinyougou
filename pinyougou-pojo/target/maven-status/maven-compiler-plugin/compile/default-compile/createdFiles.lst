@@ -1,5 +1,4 @@
 com\pinyougou\pojo\TbSpecificationExample$Criterion.class
-com\pinyougou\pojo\entity\PageResult.class
 com\pinyougou\pojo\TbPayLogExample$Criterion.class
 com\pinyougou\pojo\TbProvincesExample$GeneratedCriteria.class
 com\pinyougou\pojo\TbOrderExample$GeneratedCriteria.class
@@ -8,6 +7,7 @@ com\pinyougou\pojo\TbSpecificationExample$GeneratedCriteria.class
 com\pinyougou\pojo\TbContentExample$Criteria.class
 com\pinyougou\pojo\TbOrderExample.class
 com\pinyougou\pojo\TbSpecificationOptionExample$GeneratedCriteria.class
+entity\PageResult.class
 com\pinyougou\pojo\TbOrder.class
 com\pinyougou\pojo\TbBrandExample$Criteria.class
 com\pinyougou\pojo\TbCitiesExample$Criterion.class
@@ -29,9 +29,9 @@ com\pinyougou\pojo\TbSellerExample$GeneratedCriteria.class
 com\pinyougou\pojo\TbCitiesExample.class
 com\pinyougou\pojo\TbUserExample$GeneratedCriteria.class
 com\pinyougou\pojo\TbItemExample.class
-com\pinyougou\pojo\TbSpecificationOption.class
 com\pinyougou\pojo\TbAreasExample.class
 com\pinyougou\pojo\TbSeckillOrderExample.class
+com\pinyougou\pojo\TbSpecificationOption.class
 com\pinyougou\pojo\TbContentCategoryExample$Criteria.class
 com\pinyougou\pojo\TbContentExample$GeneratedCriteria.class
 com\pinyougou\pojo\TbGoodsExample$GeneratedCriteria.class
@@ -86,6 +86,7 @@ com\pinyougou\pojo\TbAddressExample$GeneratedCriteria.class
 com\pinyougou\pojo\TbFreightTemplateExample$Criteria.class
 com\pinyougou\pojo\TbUserExample$Criteria.class
 com\pinyougou\pojo\TbItem.class
+entity\Result.class
 com\pinyougou\pojo\TbItemCatExample$Criterion.class
 com\pinyougou\pojo\TbSpecificationOptionExample$Criterion.class
 com\pinyougou\pojo\TbContentCategoryExample.class
@@ -100,10 +101,9 @@ com\pinyougou\pojo\TbItemCatExample.class
 com\pinyougou\pojo\TbTypeTemplateExample.class
 com\pinyougou\pojo\TbGoodsDescExample.class
 com\pinyougou\pojo\TbOrderItemExample.class
-com\pinyougou\pojo\entity\Result.class
 com\pinyougou\pojo\TbSpecificationOptionExample.class
-com\pinyougou\pojo\TbSpecificationExample.class
 com\pinyougou\pojo\TbContent.class
+com\pinyougou\pojo\TbSpecificationExample.class
 com\pinyougou\pojo\TbItemCatExample$Criteria.class
 com\pinyougou\pojo\TbSellerExample.class
 com\pinyougou\pojo\TbPayLog.class

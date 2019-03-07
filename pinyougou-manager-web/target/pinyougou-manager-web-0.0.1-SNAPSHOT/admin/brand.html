@@ -18,123 +18,10 @@
 	<script src="../plugins/angularjs/pagination.js"></script>
 	<link rel="stylesheet" href="../plugins/angularjs/pagination.css">
 	<!-- 分页组件结束 -->
-    <script>
-    var app=angular.module('pinyougou', ['pagination']);//定义模块
-    app.service('brandService',function($http){
-    	this.search=function(page,rows,searchEntity){
-    		return $http.post("../brand/search.do?page="+page+"&rows="+rows,searchEntity);
-    	}
-    	this.dele=function(selectIds){
-    		return $http.get("../brand/delete.do?ids="+selectIds);
-    	}
-    	this.add=function(entity){
-    		return $http.post('../brand/add.do',entity);
-    	}
-    	this.update=function(entity){
-    		return $http.post('../brand/update.do',entity);
-    	}
-    	this.findPage=function(page,rows){
-    		return $http.get('../brand/findPage.do?page='+page+'&rows='+rows);
-    	}
-    });
-	app.controller('brandController',function($scope,$http,brandService){
- 	//读取列表数据绑定到表单中
-		$scope.findAll=function(){
-			$http.get('../brand/findAll.do').success(
-				function(response){
-					$scope.list=response;
-				}
-			);
-		}
- 		$scope.reloadList=function(){
- 			$scope.search($scope.paginationConf.currentPage,$scope.paginationConf.itemsPerPage);
- 		}
- 		$scope.saveEntity=function(entity){
- 			$scope.brand=entity;
- 		}
- 		$scope.brand={
- 				id:0,
- 				name:'',
- 				firstChar:''
- 		}
- 		$scope.paginationConf={
- 				currentPage:1,
- 				totalItems:10,
- 				itemsPerPage:10,
- 				perPageOptions:[10,20,30,40,50],
- 				onChange:function(){
- 					$scope.reloadList();
- 				}
- 		};
- 		$scope.findPage=function(page,rows){
- 			brandService.findPage(page,rows).success(
- 				function(response){
- 					$scope.list=response.rows;
- 					$scope.paginationConf.totalItems=response.total;
- 				}		
- 			)
- 		}
- 		$scope.save=function(id){
- 			if($scope.brand.id==0){
- 				brandService.add($scope.brand).success(
- 		 				function(response){
- 		 					if(response.success){
- 		 						$scope.reloadList();
- 		 					}else{
- 		 						alert(response.message);
- 		 					}
- 		 				}		
- 		 			)
- 			}else{
- 				brandService.update($scope.brand).success(
- 		 				function(response){
- 		 					if(response.success){
- 		 						$scope.reloadList();
- 		 					}else{
- 		 						alert(response.message);
- 		 					}
- 		 				}		
- 		 			)
- 			}
- 			
- 		}
- 		$scope.selectIds=[];
- 		$scope.updateSelection=function($event,id){
- 			if($event.target.checked){
- 				$scope.selectIds.push(id);
- 			}else{
- 				var idx=$scope.selectIds.indexOf(id);
- 				$scope.selectIds.splice(idx,1);
- 			}
- 		}
- 		$scope.dele=function(){
- 			brandService.dele($scope.selectIds).success(
- 				function(response){
- 					if(response.success){
-						$scope.reloadList();
-					}else{
-						alert(response.message);
-					}
- 				}
- 							
- 			)
- 		}
- 		$scope.searchEntity={
- 				name:'',
- 				firstChar:''
- 		}
- 		$scope.search=function(page,rows){
- 			brandService.search(page,rows,$scope.searchEntity).success(
- 				function(response){
- 					$scope.list=response.rows;
- 					$scope.paginationConf.totalItems=response.total;
- 				}		
- 			)
- 		}
-	});
-    
-     
-    </script>
+    <script src="../js/base_pagination.js"></script>
+    <script src="../js/service/brandService.js"></script>
+    <script src="../js/controller/baseController.js"></script>
+    <script src="../js/controller/brandController.js"></script>
 </head>
 <body class="hold-transition skin-red sidebar-mini" ng-app="pinyougou" ng-controller="brandController">
   <!-- .box-body -->
@@ -159,7 +46,7 @@
                             </div>
                             <div class="box-tools pull-right">
                                 <div class="has-feedback">
-							    	品牌名称：<input ng-model="searchEntity.name">品牌首字母：<input ng-model="searchEntity.firstChar"><button class="btn btn-default" ng-click="search(paginationConf.currentPage,paginationConf.itemsPerPage)">搜索</button>                                     
+							    	品牌名称：<input ng-model="searchEntity.name">品牌首字母：<input ng-model="searchEntity.firstChar"><button class="btn btn-default" ng-click="reloadList()">搜索</button>                                     
                                 </div>
                             </div>
                             <!--工具栏/-->
